@@ -21,7 +21,8 @@ Route::get('/', function () {
 
 Route::post('/upload', [UploadController::class, 'upload']);
 
-// Route::put('/edit', [])
+Route::get('/edit/{id}', [UploadController::class, 'edit']);
+Route::get('/update/{id}', [UploadController::class, 'update']);
 
 // Route::delete('/delete')
 
